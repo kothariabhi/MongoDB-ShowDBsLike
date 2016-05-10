@@ -15,4 +15,6 @@ All the content(functions or objects) of .mongorc.js will get included whenever 
     
     
 Uses :    
-showDBsLike()           # It will display all the databases.
+showDBsLike()           # It will display all the databases.    
+showDBsLike("")         # It will also display all the databases.    
+showDBsLike("LIKE")     # It will display all the databases contains substring "LIKE".    
