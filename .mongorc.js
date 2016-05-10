@@ -6,13 +6,10 @@
 
 function showDBsLike(like) {
         like = (typeof like !== 'undefined') ? like : "";
-        obj = JSON.parse(JSON.stringify(db.adminCommand( { listDatabases: 1 } )));
-
         var dbs = [];
-        var databases = obj.databases;
-
-        databases.forEach(function(entry){
-                dbName = entry.name;
+        
+        var databases = db.getMongo().getDBNames();
+        databases.forEach(function(dbName){
                 if(dbName.indexOf(like) > -1){
                         dbs.push(dbName);
                 }
