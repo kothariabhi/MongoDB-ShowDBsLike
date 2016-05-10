@@ -1,6 +1,6 @@
 # ShowDBLike-MongoDB
 Adding the ShowDBsLike function in your users .mongorc.js file enables you to display databases name which contains a particular string.   
-
+It works similar to MySQL's ( show databases like '%%' ).   
 
 Installation / Configuration:   
 
